@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Display from './Display/Display';
 import Customize from './Customize/Customize';
+import Features from './Features';
 
 import './App.css';
 
@@ -45,7 +46,7 @@ class App extends Component {
           <Customize 
             updateFeature={(feature, item) => this.updateFeature(feature, item)}
             selected={this.state.selected}
-            features={this.props.features}
+            features={Features}
           />
           <Display selected={this.state.selected} />
         </main>
